@@ -68,7 +68,6 @@ public class JobData {
      * @param value Value of teh field to search for
      * @return List of all jobs matching the criteria
      */
-    
     public static ArrayList<HashMap<String, String>> findByValue(String value) {
 
 
