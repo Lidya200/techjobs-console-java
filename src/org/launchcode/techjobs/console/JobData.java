@@ -41,9 +41,10 @@ public class JobData {
             if (!values.contains(aValue)) {
                 values.add(aValue);
             }
+        }
                Collections.sort(values);
 
-        }
+        
 
         return values;
     }
@@ -53,7 +54,7 @@ public class JobData {
         // load data, if not already loaded
         loadData();
 
-        return allJobs;
+        return new ArrayList<>(allJobs);
     }
 
     /**
