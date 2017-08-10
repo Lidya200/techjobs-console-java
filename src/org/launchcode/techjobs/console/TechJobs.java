@@ -3,6 +3,8 @@ package org.launchcode.techjobs.console;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.Iterator;
 
 /**
  * Created by LaunchCode
