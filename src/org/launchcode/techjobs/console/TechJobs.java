@@ -111,6 +111,48 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-        System.out.println("printJobs is not implemented yet");
+         
+
+        if(someJobs.size() == 0) { // if the size is empty return
+
+            System.out.println("No result found! Try again.");
+
+        } else {
+
+            for (HashMap<String, String> map: someJobs) { //starterd with stara start with hashmap and elment to find iterator nasted loop
+
+                System.out.println("*****");
+
+
+                // get a set of keys contained in this HashMap
+
+                Set<String> set = map.keySet();
+
+
+
+                // get an iterator over the elements in this set.
+
+                Iterator<String> iterator = set.iterator();
+
+                while (iterator.hasNext()) {
+
+                    String key = (String) iterator.next();
+
+                    String value = (String) map.get(key);
+
+
+
+                    System.out.println(key + ": " + value);
+
+                }
+
+                System.out.println("*****");
+
+                System.out.println();
+
+            }
+
+        }
+
     }
-}
+
