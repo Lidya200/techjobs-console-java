@@ -41,6 +41,8 @@ public class JobData {
             if (!values.contains(aValue)) {
                 values.add(aValue);
             }
+               Collections.sort(values);
+
         }
 
         return values;
